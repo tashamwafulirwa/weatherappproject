@@ -49,12 +49,12 @@ function displayTemperature(response) {
 }
 
 
-function search(event) {
+function search(city) {
   event.preventDefault();
   let city = document.querySelector("#city-input").value;
   let apiKey = "532204b610112a0c24a32e14ce6c2371";
   let apiUrL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-  axios.get(apiUrL).then(displayWeatherCondition);
+  axios.get(apiUrL).then(displayTemperature);
 }
 
 let day = days[now.getDay()];
