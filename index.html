@@ -10,12 +10,29 @@
      <title>Weather App</title>
  </head>
 <body>
-	<h1>weather</h1>
-  <h2 id="date">Tuesday 19:00</h2> 
-    <h3 id="city"> Paris </h3>
-    <span class="temperature" id="temperature">19</span>
-    <span>°C
-    </span>
+    <div class="container">
+	<h1 id="city" > Edinburgh</h1>
+  <ul> <li id="date">Tuesday 19:00</li>
+    <li> Cloudy </li> </ul>
+        <div class "row">
+            <div class="col-6">
+                <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                alt="Cloudy"/>
+                12°C | °F 
+        </div>
+        <div class="col-6" </div>
+        <ul>
+            <li>
+             Precipitation: 1%   
+            </li>
+            <li>
+             Humidity: 52%   
+            </li>
+            <li>
+             Wind: 13 mph  
+            </li>
+        </ul>
+
     <form id="search-form">
       <input 
       type="text" 
@@ -25,6 +42,7 @@
       id="city-input"
       />
       <input type="submit" />
+    </div>
       <script src="src/app.js"></script>
 </body>
 
