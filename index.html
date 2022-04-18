@@ -1,12 +1,27 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html>
+
 <head>
-<title>Weather App</title>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
+
 <body>
-
-<h1>Weather App</h1>
-<p>Weather around the world!</p>
-
+	<h1>weather</h1>
+  <h2 id="date">Tuesday 19:00</h2> 
+    <h3 id="city"> Paris </h3>
+    <span class="temperature" id="temperature">19</span>
+    <span>°C
+    </span>
+    <form id="search-form">
+      <input 
+      type="text" 
+      placeholder="search city..."
+      autofocus="on"
+      autocomplete="off"
+      id="city-input"
+      />
+      <input type="submit" />
+      <script src="src/index.js"></script>
 </body>
+
 </html>
