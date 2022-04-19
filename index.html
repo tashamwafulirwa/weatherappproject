@@ -4,9 +4,8 @@
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-
      <link rel="stylesheet" href="src/styles.css">
+     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
      <title>Weather App</title>
  </head>
 <body>
@@ -14,10 +13,10 @@
     <div class="weather-app">
      <div class="overview">  
 
-	<h1>Edinburgh</h1>
+	<h1 id="city"></h1>
     
   <ul> <li id="date">Tuesday 19:00</li>
-    <li> Cloudy </li>
+    <li id="description"> Clear </li>
    </ul>
      </div>
         <div class "row">
@@ -28,15 +27,12 @@
                 class="float-left"
                 />
                 <div class="float-left">
-                <strong>12</strong> <span class="units">°C | <a href="#">°F</a> </span>
+                <strong id="strong"> </strong> <span class="units">°C | <a href="#">°F</a> </span>
         </div>
         </div>
         </div>
         <div class="col-6">
         <ul>
-            <li>
-             Precipitation: 1%   
-            </li>
             <li>
              Humidity: 52%   
             </li>
