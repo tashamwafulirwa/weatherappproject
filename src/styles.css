@@ -1,6 +1,23 @@
 body {
   font-family: arial, sans-serif;
+  background: linear-gradient(181.2deg, rgb(181, 239, 249) 10.5%, rgb(254, 254, 254) 86.8%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100vh;
+  width: 100vw;
 }
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+    background: #eee;
+  }
+
 
 h1 {
   color: #878787;
