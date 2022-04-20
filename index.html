@@ -11,6 +11,18 @@
 <body>
     <div class="container">
     <div class="weather-app">
+      <form id="search-form">
+        <div class="row">
+        <input 
+        type="search" 
+        placeholder="Search city..."
+        autofocus="on"
+        autocomplete="off"
+        id="city-input"
+      />
+        <input type="submit" value="Search" />
+        </div>
+        </form>
      <div class="overview">  
 
 	<h1 id="city"></h1>
@@ -28,7 +40,7 @@
                 class="float-left"
                 />
                 <div class="float-left">
-                <strong id="strong"> </strong> <span class="units">°C | <a href="#">°F</a> </span>
+                <strong id="temperature"> </strong> <span class="units">°C | <a href="#">°F</a> </span>
         </div>
         </div>
         </div>
@@ -43,15 +55,6 @@
           </div>
         </ul>
 
-    <form id="search-form">
-      <input 
-      type="text" 
-      placeholder="search city..."
-      autofocus="on"
-      autocomplete="off"
-      id="city-input"
-      />
-      <input type="submit" />
     </div>
       <small>
           <a href="https://github.com/tashamwafulirwa/weatherappproject" target="_blank">Open-source code</a>, by Tasha Mwafulirwa
